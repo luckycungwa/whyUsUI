@@ -1,22 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import SocialLink from './comp/SocialLink';
+import Menu from './comp/Menu';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
+    
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      {/* Logoo followed by menu links then social links */}
+      <h1 className='logo'>WEB_</h1>
+      <>
+        <Menu/>
+        <SocialLink/>
+
+        </>
       </header>
     </div>
   );
