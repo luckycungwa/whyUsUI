@@ -31,7 +31,7 @@ function SocialLink (){
 
         // Display social links in row  || Uncomment this section for default workig code!
         <>
-        <div className="">
+        <div className="socialLink">
             <ul>
                 <li>
                     <a href="#" className="menuLink">
