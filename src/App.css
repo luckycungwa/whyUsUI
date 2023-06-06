@@ -24,19 +24,19 @@ main {
 header {
   justify-content: space-between;
   background-color: #202020;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 60px;
   display: flex;
   align-items: center;
+  z-index: 5;
 }
 
 header * {
   display: inline;
 }
-
 
 header li {
   margin: 20px;
@@ -59,24 +59,23 @@ header li {
   margin-right: 8px;
   filter: brightness(1) invert(0);
   border-radius: 50%;
-
 }
 
-.icon:hover{
+.icon:hover {
   height: 24px;
   width: 24px;
   padding: 4px;
-  filter: invert(14%) sepia(86%) saturate(5911%) hue-rotate(1deg) brightness(98%) contrast(119%);
+  filter: invert(14%) sepia(86%) saturate(5911%) hue-rotate(1deg)
+    brightness(98%) contrast(119%);
 }
 
 .navLink {
- text-decoration: none;
- font-weight: bold;
- color: azure;
+  text-decoration: none;
+  font-weight: bold;
+  color: azure;
   align-items: center;
   align-content: center;
   margin-left: 200px;
-
 }
 
 .menuLink {
@@ -85,7 +84,7 @@ header li {
   color: #fff;
   /* Menu links for hover animation */
   text-decoration: none;
-  
+
   display: inline-block;
   padding: 0px 0px 2px 0px;
   position: relative;
@@ -93,25 +92,23 @@ header li {
   font-weight: bold;
 }
 
-
 .socialLink {
   display: flex;
   align-content: right;
   position: relative;
   margin: 12px;
-  filter: invert(100%) sepia(0%) saturate(10%) hue-rotate(175deg) brightness(200%) contrast(106%);
+  filter: invert(100%) sepia(0%) saturate(10%) hue-rotate(175deg)
+    brightness(200%) contrast(106%);
 }
 
-ul { 
-  padding: 0; 
-  list-style: none; 
+ul {
+  padding: 0;
+  list-style: none;
   display: table;
-  
 }
 
-li { 
-  
-  position: relative; 
+li {
+  position: relative;
 }
 
 a {
@@ -121,7 +118,7 @@ a {
   position: relative;
 }
 a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -130,26 +127,24 @@ a::after {
   left: 0;
   background-color: #ff0040;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;    
-   
+  transition: transform 0.25s ease-out;
 }
 
-a:hover::after { 
+a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-  width: 100%; 
-  left: 0; 
+  width: 100%;
+  left: 0;
 }
 
 .card {
-  display:inline-flex;
+  display: inline-flex;
   width: 320px;
   height: 180px;
   object-fit: cover;
   box-shadow: 0 1px 25px #30303033;
   margin: 12px;
   border-radius: 20px;
-  
 }
 
 .card:hover {
@@ -161,51 +156,45 @@ a:hover::after {
 .cardList {
   align-items: center;
   align-content: center;
-  margin: 20px; 
-  padding: 0; 
-  list-style: none; 
+  margin: 20px;
+  padding: 0;
+  list-style: none;
   /* display: table;
   width: 600px;
   text-align: center; */
 }
 
 .bgImage {
-  position: relative;
-  width: 390px;
-  height: 480px;
+  position: absolute;
+  width: 500px;
+  height: 600px;
   background-color: #ff0040;
   border-radius: 50% 50% 0% 0%;
-  box-shadow: 0 1px 25px #ff000033;
+  margin-left: 120px ;
+  box-shadow: 0 1px 32px #ff0000c4;
 }
 
-.mainImage{
+.mainImage {
   margin-top: 50px;
-  margin-left: 5px ;
+  margin-left: 0px;
   position: absolute;
-  width: 400px;
+  width: 520px;
 }
 
 .titleImg {
-  font-size: 38px;
-  position: absolute;
+  font-size: 72px;
+  position:absolute;
   transform: rotate(-90deg);
-  z-index: 5;
-  margin:250px 5px 0px -80px;
+  z-index: 0;
+  letter-spacing: 4px;
   color: white;
-  
-    font-weight: bold;
-    text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
+  margin: 260px 0px 0px -260px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
 .title {
@@ -213,6 +202,7 @@ a:hover::after {
   z-index: 5;
   color: #272727;
   letter-spacing: 0.5px;
+  font-weight: bolder;
 }
 
 .textBlock {
@@ -220,13 +210,13 @@ a:hover::after {
   color: #202020;
   font-size: medium;
   display: block;
-  inline-size: 600px;
+  inline-size: 650px;
   overflow-wrap: break-word;
   margin: 8px;
   align-items: left;
 }
 
-.ctaButton{
+.ctaButton {
   font-weight: bold;
   font-size: 14px;
   color: #ffffff;
@@ -234,7 +224,7 @@ a:hover::after {
   padding: 10px 30px;
   border: solid #ff0040 2px;
   border-radius: 50px;
-  transition : 300ms;
+  transition: 300ms;
   transform: translateY(0);
   /* display: flex;
   flex-direction: row; */
@@ -243,11 +233,44 @@ a:hover::after {
   margin: 24px 0px 24px 0px;
 }
 
-.ctaButton:hover{
-  transition : 1000ms;
-padding: 10px 24px;
-transform : translateY(-0px);
-background-color: #00000000;
-color: #2b2a4b;
-border: solid 2px #ff0033;
+.ctaButton:hover {
+  transition: 1000ms;
+  padding: 10px 24px;
+  transform: translateY(-0px);
+  background-color: #00000000;
+  color: #2b2a4b;
+  border: solid 2px #ff0033;
+}
+
+/* MAIN LAYOUT CONTAINERS */
+/* Master container */
+.section {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  width: 50%;
+  overflow: hidden;
+
+}
+/* aub sections */
+.cardSection {
+  /* align-items: center;
+  display: flex;
+  flex-wrap: nowrap; 
+  background-color: #e31919;
+  */
+  flex-wrap: nowrap; 
+  margin: 12px;
+}
+
+.aboutSection {
+  flex-wrap: nowrap;
+  background-color: #2b2a4b;
+}
+
+.profileSection {
+  /* align-items: center;
+  display: flex;
+  flex-wrap: nowrap; 
+  background-color: cornflowerblue;*/
+  margin: 12px;
 }
