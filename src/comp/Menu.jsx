@@ -6,26 +6,26 @@ function Menu (){
     return (
         // Display social links in row
         <>
-        <div className="">
+        <div className="navLink">
             <ul>
                 <li className="menuLink">
                     <a href="#"  className="menuLink">
-                    <p>Port_</p>
+                    <p>SERVICES</p>
                     </a>
                 </li>
                 <li className="menuLink">
                     <a href="#" className="menuLink">
-                    <p>About_</p>
+                    <p>PORTFOLIO</p>
                     </a>
                 </li>
                 <li>
                     <a href="#" className="menuLink">
-                    <p>Blog_</p>
+                    <p>ABOUT</p>
                     </a>
                 </li>
                 <li>
                     <a href="#"  className="menuLink">
-                    <p>Rev_</p>
+                    <p>CONTACT</p>
                     </a>
                 </li>
 

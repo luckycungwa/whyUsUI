@@ -11,19 +11,19 @@ function SocialLink (){
         <div className="socialLink">
             <ul>
                 <li>
-                    <a href="#" className="icon">
+                    <a href="#">
                     <img src='./icon/facebook.png' className="icon"/>
                     </a>
 
-                    <a href="#" className="icon">
+                    <a href="#">
                     <img src='./icon/twitter.png' className="icon"/>
                     </a>
 
-                    <a href="#" className="icon">
+                    <a href="#">
                     <img src='./icon/dribbble.png' className="icon"/>
                     </a>
 
-                    <a href="#" className="icon">
+                    <a href="#">
                     <img src='./icon/github.png' className="icon"/>
                     </a>
                 </li>
