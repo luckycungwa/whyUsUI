@@ -23,7 +23,7 @@ main {
 
 header {
   background-color: #202020;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -52,16 +52,16 @@ header li a {
 }
 
 .icon {
-  height: 12px;
-  width: 12px;
+  height: 22px;
+  width: 22px;
   padding: 4px;
   margin-left: 8px;
   margin-right: 8px;
 }
 
 .icon :hover{
-  height: 14px;
-  width: 14px;
+  height: 24px;
+  width: 24px;
   padding: 2.5px;
 }
 
@@ -91,18 +91,21 @@ header li a {
   font-weight: bold;
 }
 
+
+
 .socialLink {
   display: flex;
-  align-items: center;
-  align-content: end;
+  align-content: right;
+  
+  position: relative;
+  
 }
 
 ul { 
-  margin: 80px auto 0; 
   padding: 0; 
   list-style: none; 
   display: table;
-  width: 600px;
+  
 }
 
 li { 
@@ -117,16 +120,8 @@ a {
   position: relative;
 }
 a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+  width: 100%; 
+  left: 0; 
 }
 a:hover:after { 
   width: 100%; 
@@ -157,8 +152,9 @@ a:hover:after {
 }
 
 .cardList {
-  
-  margin: 80px auto 0; 
+  align-items: center;
+  align-content: center;
+  margin: 20px; 
   padding: 0; 
   list-style: none; 
   /* display: table;
@@ -183,7 +179,7 @@ a:hover:after {
 }
 
 .titleImg {
-font-size: 48px;
+  font-size: 38px;
   position: absolute;
   transform: rotate(-90deg);
   z-index: 5;
@@ -205,8 +201,46 @@ font-size: 48px;
                0 20px 20px rgba(0,0,0,.15);
 }
 
-.title{
+.title {
   font-size: 38px;
   z-index: 5;
-  color: rgb(39, 39, 39);
+  color: #272727;
+  letter-spacing: 0.5px;
+}
+
+.textBlock {
+  text-overflow: clip;
+  color: #202020;
+  font-size: medium;
+  display: block;
+  inline-size: 600px;
+  overflow-wrap: break-word;
+  margin: 8px;
+  align-items: left;
+}
+
+.ctaButton{
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #e31919;
+  padding: 10px 30px;
+  border: solid #ff0040 2px;
+  border-radius: 50px;
+  transition : 300ms;
+  transform: translateY(0);
+  /* display: flex;
+  flex-direction: row; */
+  align-items: center;
+  cursor: pointer;
+  margin: 24px 0px 24px 0px;
+}
+
+.ctaButton:hover{
+  transition : 1000ms;
+padding: 10px 24px;
+transform : translateY(-0px);
+background-color: #00000000;
+color: #2b2a4b;
+border: solid 2px #ff0033;
 }

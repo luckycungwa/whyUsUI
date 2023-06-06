@@ -2,30 +2,7 @@ import React from "react";
 
 // Social Links function/ component
 function SocialLink (){
-    const icons = [
-        {
-            'id': 1,
-            'tag': 'facebook',
-            'image': './icon/facebook.com.png'
-        },
-        {
-            'id': 2,
-            'tag': 'twitter.com',
-            'image': './icon/twitter.png'
-        },
-        {
-            'id': 3,
-            'tag': 'whatsApp.com',
-            'image': './icon/whatsapp.png'
-        },
-        {
-            'id': 4,
-            'tag': 'dribbble.com',
-            'image': './icon/dribbble.png'
-        }
-        
-        ];
-
+  
 
     return (
 
@@ -34,20 +11,20 @@ function SocialLink (){
         <div className="socialLink">
             <ul>
                 <li>
-                    <a href="#" className="menuLink">
-                    <img src='./icon/facebook.png'/>
+                    <a href="#" className="icon">
+                    <img src='./icon/facebook.png' className="icon"/>
                     </a>
 
                     <a href="#" className="icon">
-                    <img src='./icon/facebook.png'/>
+                    <img src='./icon/twitter.png' className="icon"/>
                     </a>
 
                     <a href="#" className="icon">
-                    <img src='./icon/facebook.png'/>
+                    <img src='./icon/dribbble.png' className="icon"/>
                     </a>
 
                     <a href="#" className="icon">
-                    <img src='./icon/facebook.png'/>
+                    <img src='./icon/github.png' className="icon"/>
                     </a>
                 </li>
 

@@ -2,27 +2,18 @@ import React from "react";
 
 // Social Links function/ component
 function Menu (){
-    const images = [
-        './icon/facebook.png',
-        './icon/whatsapp.png',
-        './icon/dribbble.png',
-        './icon/github.png',
-        './icon/twitter.png',
-
-      ];
-    
 
     return (
         // Display social links in row
         <>
-        <div className="menuList">
+        <div className="">
             <ul>
-                <li>
+                <li className="menuLink">
                     <a href="#"  className="menuLink">
                     <p>Port_</p>
                     </a>
                 </li>
-                <li>
+                <li className="menuLink">
                     <a href="#" className="menuLink">
                     <p>About_</p>
                     </a>
