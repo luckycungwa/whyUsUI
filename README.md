@@ -1,3 +1,7 @@
+# Project preview
+
+![Screenshot (14)](https://github.com/luckycungwa/whyUsUI/assets/36919645/63fd6845-b8e5-4c4b-91a2-0f6ed0f963e5)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
